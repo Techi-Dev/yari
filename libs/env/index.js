@@ -2,7 +2,14 @@ const fs = require("fs");
 const path = require("path");
 
 const dotenv = require("dotenv");
+
+
+const dotenv = require('dotenv').config();
+
 const dirname = __dirname;
+
+path = path.join(__dirname, "..");
+
 
 const { VALID_FLAW_CHECKS } = require("../constants");
 
